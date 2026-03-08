@@ -1,16 +1,15 @@
-# Compiled class file
+### --- Java & Build Tools --- ###
+# Skompilowane pliki klas
 *.class
-
-# Log file
+# Logi
 *.log
-
-# BlueJ files
+# Pliki BlueJ
 *.ctxt
+# Logi błędów maszyny wirtualnej
+hs_err_pid*
+replay_pid*
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Pakiety (używaj zewnętrznych repozytoriów zamiast trzymać je w Gicie)
 *.jar
 *.war
 *.nar
@@ -19,6 +18,22 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+### --- Gradle --- ###
+.gradle/
+build/
+# Lokalne ustawienia Gradle (np. ścieżki do JDK, o których pisaliśmy wcześniej)
+.gradle-home/
+
+### --- IntelliJ IDEA --- ###
+.idea/
+*.iws
+*.iml
+*.ipr
+# Wyjątek: jeśli chcesz dzielić się konfiguracją słownika lub schematów z innymi,
+# możesz odkomentować poniższe, ale dla małych projektów lepiej ignorować całe .idea
+# !.idea/dictionaries
+# !.idea/iconloader.xml
+
+### --- OS (Systemowe śmieci) --- ###
+.DS_Store
+Thumbs.db
